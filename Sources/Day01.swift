@@ -29,7 +29,6 @@ struct Day01: AdventDay {
   // Replace this with your solution for the second part of the day's challenge.
   func part2() -> Int {
     let right = Dictionary(rightSide.map { ($0, 1) }, uniquingKeysWith: +)
-    print("ahh")
     return leftSide.map { leftSideValue in
       leftSideValue * right[leftSideValue, default: 0]
     }
